@@ -1,18 +1,103 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="card-demo">
+      <card-border cardTheme="purple">
+        <div class="test">
+          <span>content</span>
+          <p>test</p>
+        </div>
+      </card-border>
+    </div>
+    <div class="card-demo">
+      <card-border>
+        <div class="test">
+          <span>content</span>
+          <p>test</p>
+        </div>
+      </card-border>
+    </div>
+    <div class="card-demo">
+      <card-border cardTheme="orange">
+        <div class="test">
+          <span>content</span>
+          <p>test</p>
+        </div>
+      </card-border>
+    </div>
+    <div class="card-demo">
+      <card-border cardTheme="green">
+        <div class="test">
+          <span>content</span>
+          <p>test</p>
+        </div>
+      </card-border>
+    </div>
+    <div class="card-demo">
+      <card-border cardTheme="purple" :titleDecoration="false" title="我是标题1">
+        <div class="test">
+          <span>content</span>
+          <p>test</p>
+        </div>
+      </card-border>
+    </div>
+    <div class="card-demo">
+      <card-border :titleDecoration="false" title="我是标题2">
+        <div class="test">
+          <span>content</span>
+          <p>test</p>
+        </div>
+      </card-border>
+    </div>
+    <div class="card-demo">
+      <card-border cardTheme="orange" :titleDecoration="false" title="我是标题3">
+        <div class="test">
+          <span>content</span>
+          <p>test</p>
+        </div>
+      </card-border>
+    </div>
+    <div class="card-demo">
+      <card-border cardTheme="green" :titleDecoration="false" title="我是标题4">
+        <div class="test">
+          <span>content</span>
+          <p>test</p>
+        </div>
+      </card-border>
+    </div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
   name: 'home',
-  components: {
-    HelloWorld
-  }
+  components: {}
 }
 </script>
+<style lang="scss" scoped>
+.home {
+  width: 80%;
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(8, auto);
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+  .card-demo {
+    height: 300px;
+
+    .test {
+      box-shadow: #fff 1px 1px 10px;
+      width: 100%;
+      height: 200px;
+      background: rgba(255, 255, 255, 0.1);
+      font-size: 2em;
+      text-align: center;
+      color: #fff;
+    }
+  }
+}
+</style>
