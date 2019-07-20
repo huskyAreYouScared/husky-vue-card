@@ -11,13 +11,13 @@
 npm install husky-vue-card -S
 ```
 ### use husky-vue-card (使用插件)
-```
+```javascript
 import huskyVueCard from 'husky-vue-card'
 Vue.use(huskyVueCard)
 ```
 
 ### basic config
-```
+```html
 <husky-vue-card
   cardTheme="purple"
   headerHight="40px"
