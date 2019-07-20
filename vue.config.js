@@ -69,20 +69,20 @@ module.exports = {
   pwa: {},
 
   // configure webpack-dev-server behavior
-  devServer: {
-    proxy: {
-      // '/': {
-      //   target: '',
+  // devServer: {
+  //   proxy: {
+  //     // '/': {
+  //     //   target: '',
 
-      //   changeOrigin: true
-      //   // onProxyReq: function (preq, req, res) {
-      //   // }
-      //   // pathRewrite: {
-      //   //     '^enroll': 'enroll'
-      //   // }
-      // }
-    }
-  },
+  //     //   changeOrigin: true
+  //     //   // onProxyReq: function (preq, req, res) {
+  //     //   // }
+  //     //   // pathRewrite: {
+  //     //   //     '^enroll': 'enroll'
+  //     //   // }
+  //     // }
+  //   }
+  // },
   // options for 3rd party plugins
   pluginOptions: {
     // ...

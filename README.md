@@ -1,29 +1,39 @@
-# card-project
+# husky-vue-card
 
-## Project setup
-```
-npm install
-```
+## demo (样品) 
+  [demo](https://huskyareyouscared.github.io/husky-vue-card/dist/index.html)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## show (效果图)
+  ![效果展示](https://huskyareyouscared.github.io/husky-vue-card/src/assets/demo.png)
 
-### Compiles and minifies for production
+## npm install plugin (安装插件)
 ```
-npm run build
+npm install husky-vue-card -S
 ```
 
-### Run your tests
+### use husky-vue-card (使用插件)
 ```
-npm run test
+import huskyVueCard from 'husky-vue-card'
+
+Vue.use(huskyVueCard)
 ```
 
-### Lints and fixes files
+### basic config
 ```
-npm run lint
+ <husky-vue-card
+    cardTheme="purple"
+    headerHight="40px"
+    :titleDecoration="true"
+    title="this is title"
+    >
+    <!-- this slot-->
+  </husky-vue-card>
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### API
+|参数（parameter）|说明（description）|类型（type）|默认值（default）|
+|：-|：-|：-|：-|
+|cardTheme|card theme|String|blue、(available:orange、purple、green、pink)|
+|headerHight|card height|String|46px|
+|titleDecoration|card Decoration(卡片装饰)|Boolean|true|
+|title|card title(卡片标题)|String|可以设置标题|

@@ -1,68 +1,73 @@
 <template>
   <div class="home">
     <div class="card-demo">
-      <card-border cardTheme="purple">
+      <husky-vue-card
+        cardTheme="purple"
+        headerHight="40px"
+        :titleDecoration="true"
+        title="this is title"
+        >
         <div class="test">
           <span>content</span>
           <p>test</p>
         </div>
-      </card-border>
+      </husky-vue-card>
     </div>
     <div class="card-demo">
-      <card-border>
+      <husky-vue-card>
         <div class="test">
           <span>content</span>
           <p>test</p>
         </div>
-      </card-border>
+      </husky-vue-card>
     </div>
     <div class="card-demo">
-      <card-border cardTheme="orange">
+      <husky-vue-card cardTheme="orange">
         <div class="test">
           <span>content</span>
           <p>test</p>
         </div>
-      </card-border>
+      </husky-vue-card>
     </div>
     <div class="card-demo">
-      <card-border cardTheme="green">
+      <husky-vue-card cardTheme="green">
         <div class="test">
           <span>content</span>
           <p>test</p>
         </div>
-      </card-border>
+      </husky-vue-card>
     </div>
     <div class="card-demo">
-      <card-border cardTheme="purple" :titleDecoration="false" title="我是标题1">
+      <husky-vue-card cardTheme="purple" :titleDecoration="false" title="我是标题1">
         <div class="test">
           <span>content</span>
           <p>test</p>
         </div>
-      </card-border>
+      </husky-vue-card>
     </div>
     <div class="card-demo">
-      <card-border :titleDecoration="false" title="我是标题2">
+      <husky-vue-card :titleDecoration="false" title="我是标题2">
         <div class="test">
           <span>content</span>
           <p>test</p>
         </div>
-      </card-border>
+      </husky-vue-card>
     </div>
     <div class="card-demo">
-      <card-border cardTheme="orange" :titleDecoration="false" title="我是标题3">
+      <husky-vue-card cardTheme="orange" :titleDecoration="false" title="我是标题3">
         <div class="test">
           <span>content</span>
           <p>test</p>
         </div>
-      </card-border>
+      </husky-vue-card>
     </div>
     <div class="card-demo">
-      <card-border cardTheme="green" :titleDecoration="false" title="我是标题4">
+      <husky-vue-card cardTheme="green" :titleDecoration="false" title="我是标题4">
         <div class="test">
           <span>content</span>
           <p>test</p>
         </div>
-      </card-border>
+      </husky-vue-card>
     </div>
   </div>
 </template>
