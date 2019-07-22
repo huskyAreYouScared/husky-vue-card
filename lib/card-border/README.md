@@ -1,5 +1,11 @@
 # husky-vue-card
 
+## introduction （介绍）
+
+* High card flexibility（卡片灵活度高）
+* Support custom configurations such as titles, decorations, custom slots, etc.（支持标题、装饰物、自定义插槽等灵活的自定义配置）
+* Continuously update, focus on card component development（持续更新、专注卡片组件开发）
+
 ## demo (样品) 
   [demo](https://huskyareyouscared.github.io/husky-vue-card/dist/index.html)
 
@@ -24,7 +30,7 @@ Vue.use(huskyVueCard)
   :titleDecoration="true"
   title="this is title"
   >
-  <!-- this slot-->
+  <div>custom content</div>
 </husky-vue-card>
 ```
 
