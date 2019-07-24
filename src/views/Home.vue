@@ -7,66 +7,86 @@
         :titleDecoration="true"
         title="this is title"
         >
-        <div class="test">
-          <span>content</span>
-          <p>test</p>
-        </div>
+         <template v-slot:body>
+           <div class="test">
+            <span>content</span>
+            <p>test</p>
+          </div>
+        </template>
       </husky-vue-card>
     </div>
     <div class="card-demo">
       <husky-vue-card>
-        <div class="test">
-          <span>content</span>
-          <p>test</p>
-        </div>
+         <template v-slot:body>
+           <div class="test">
+            <span>content</span>
+            <p>test</p>
+          </div>
+        </template>
       </husky-vue-card>
     </div>
     <div class="card-demo">
       <husky-vue-card cardTheme="orange">
-        <div class="test">
-          <span>content</span>
-          <p>test</p>
-        </div>
+         <template v-slot:body>
+           <div class="test">
+            <span>content</span>
+            <p>test</p>
+          </div>
+        </template>
       </husky-vue-card>
     </div>
     <div class="card-demo">
       <husky-vue-card cardTheme="green">
-        <div class="test">
-          <span>content</span>
-          <p>test</p>
-        </div>
+         <template v-slot:body>
+           <div class="test">
+            <span>content</span>
+            <p>test</p>
+          </div>
+        </template>
       </husky-vue-card>
     </div>
     <div class="card-demo">
       <husky-vue-card cardTheme="purple" :titleDecoration="false" title="我是标题1">
-        <div class="test">
-          <span>content</span>
-          <p>test</p>
-        </div>
+        <template v-slot:body>
+           <div class="test">
+            <span>content</span>
+            <p>test</p>
+          </div>
+        </template>
       </husky-vue-card>
     </div>
     <div class="card-demo">
       <husky-vue-card :titleDecoration="false" title="我是标题2">
-        <div class="test">
-          <span>content</span>
-          <p>test</p>
-        </div>
+         <template v-slot:body>
+           <div class="test">
+            <span>content</span>
+            <p>test</p>
+          </div>
+        </template>
       </husky-vue-card>
     </div>
     <div class="card-demo">
       <husky-vue-card cardTheme="orange" :titleDecoration="false" title="我是标题3">
-        <div class="test">
-          <span>content</span>
-          <p>test</p>
-        </div>
+         <template v-slot:body>
+           <div class="test">
+            <span>content</span>
+            <p>test</p>
+          </div>
+        </template>
       </husky-vue-card>
     </div>
     <div class="card-demo">
-      <husky-vue-card cardTheme="green" :titleDecoration="false" title="我是标题4">
-        <div class="test">
-          <span>content</span>
-          <p>test</p>
-        </div>
+      <husky-vue-card cardTheme="green" :titleShow="false" :titleDecoration="false" title="dajiahao">
+        <template v-slot:body>
+           <div class="test">
+            <span>content</span>
+            <p>test</p>
+          </div>
+        </template>
+        <template v-slot:iconTitle>
+            <img src="../assets/fund-fill.svg" alt="">
+        </template>
+
       </husky-vue-card>
     </div>
   </div>

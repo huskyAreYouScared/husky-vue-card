@@ -10,11 +10,12 @@
       >
       <span v-show="titleDecoration" class="card-header-small"></span>
       <span v-show="titleDecoration" class="card-header-middle"></span>
-      <span class="card-title">{{title}}</span>
+      <span class="card-title-img"><slot name="iconTitle"></slot></span>
+      <span v-show="titleShow" class="card-title">{{title}}</span>
       <span v-show="titleDecoration" class="card-header-middle"></span>
       <span v-show="titleDecoration" class="card-header-small"></span>
     </div>
-    <slot></slot>
+    <slot name="body"></slot>
   </div>
 </template>
 
@@ -40,6 +41,11 @@ export default {
     headerHight: {
       type: String,
       default: '46px'
+    },
+    // 隐藏textTitle
+    titleShow: {
+      type: Boolean,
+      default: true
     }
   },
   // import引入的组件需要注入到对象中才能使用
@@ -88,6 +94,7 @@ export default {
     border-radius:6px 6px 0px 0px;
     user-select: none;
     cursor: pointer;
+    vertical-align: middle;
     /* line-height: 46px; */
   }
   .card-header-small::before{
@@ -115,6 +122,13 @@ export default {
   .card-title{
     color: #fff;
     font-size: 22px;
+    vertical-align: middle;
+    display: inline-block;
+  }
+  .card-title-img img{
+    width: 10%;
+    vertical-align: middle;
+    display: inline-block;
   }
 
   /* 主题色  theme */
