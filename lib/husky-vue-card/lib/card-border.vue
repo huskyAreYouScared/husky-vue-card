@@ -1,7 +1,13 @@
 <!--  -->
 <template>
   <div class='card-container'>
-    <div class="card-header" :class="selfTheme" :style="{height:headerHight,lineHeight:headerHight}">
+    <div class="card-header"
+      :class="selfTheme"
+      :style="{height:headerHight,lineHeight:headerHight}"
+      @mousedown="cardMouseDown"
+      @mousemove="cardMouseMove"
+      @mouseup="cardMouseUp"
+      >
       <span v-show="titleDecoration" class="card-header-small"></span>
       <span v-show="titleDecoration" class="card-header-middle"></span>
       <span class="card-title">{{title}}</span>
@@ -52,7 +58,15 @@ export default {
   watch: {},
   // 方法集合
   methods: {
-
+    cardMouseDown (e) {
+      console.log(e)
+    },
+    cardMouseMove (e) {
+      console.log(e)
+    },
+    cardMouseUp (e) {
+      console.log(e)
+    }
   },
   // 生命周期 - 挂载完成（可以访问DOM元素）
   mounted () {
@@ -72,6 +86,8 @@ export default {
     /* height:46px; */
     text-align: center;
     border-radius:6px 6px 0px 0px;
+    user-select: none;
+    cursor: pointer;
     /* line-height: 46px; */
   }
   .card-header-small::before{
