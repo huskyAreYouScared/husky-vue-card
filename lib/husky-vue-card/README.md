@@ -24,20 +24,34 @@ Vue.use(huskyVueCard)
 
 ### basic config
 ```html
-<husky-vue-card
-  cardTheme="purple"
-  headerHight="40px"
-  :titleDecoration="true"
-  title="this is title"
-  >
-  <div>custom content</div>
+<husky-vue-card 
+  cardTheme="green" 
+  :titleShow="false" 
+  :titleDecoration="false" 
+  title="dajiahao">
+  <template v-slot:iconTitle>
+    <img src="../assets/fund-fill.svg" alt="">
+  </template>
+  <template v-slot:body>
+      <div class="test">
+      <span>content</span>
+      <p>test</p>
+    </div>
+  </template>
 </husky-vue-card>
 ```
 
 ### API
-| 参数（parameter） | 说明（description） | 类型（type） | 默认值（default） |
+| parameter（参数） | description（说明） | type（类型） | default（默认值） |
 | :- | :- | :- | :- |
 | cardTheme | card theme | String | blue、(available:orange、purple、green、pink) |
 | headerHight | card height | String | 46px |
 | titleDecoration | card Decoration(卡片装饰) | Boolean | true |
+| titleShow | Card text title can be hidden(卡片文字标题可以隐藏) | Boolean | true |
 | title | card title(卡片标题) | String | 可以设置标题 |
+
+### slot
+| slot name(插槽名称) | description（说明） |
+| :- | :- |
+| iconTitle（图片标题） |  add icon title（添加图片标题） |
+| body（卡片主体） | add card body content（添加卡片主题内容） |
