@@ -2,7 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-import huskyVueCard from 'husky-vue-card'
+import huskyVueCard from '../lib/husky-vue-card'
 
 Vue.use(huskyVueCard)
 Vue.config.productionTip = false

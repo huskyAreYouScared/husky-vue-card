@@ -1,12 +1,9 @@
 <!--  -->
 <template>
-  <div class='card-container'>
+  <div class='card-container' ref="cardParent">
     <div class="card-header"
       :class="selfTheme"
       :style="{height:headerHight,lineHeight:headerHight}"
-      @mousedown="cardMouseDown"
-      @mousemove="cardMouseMove"
-      @mouseup="cardMouseUp"
       >
       <span v-show="titleDecoration" class="card-header-small"></span>
       <span v-show="titleDecoration" class="card-header-middle"></span>
@@ -64,15 +61,6 @@ export default {
   watch: {},
   // 方法集合
   methods: {
-    cardMouseDown (e) {
-      console.log(e)
-    },
-    cardMouseMove (e) {
-      console.log(e)
-    },
-    cardMouseUp (e) {
-      console.log(e)
-    }
   },
   // 生命周期 - 挂载完成（可以访问DOM元素）
   mounted () {
