@@ -76,7 +76,7 @@
       </husky-vue-card>
     </div>
     <div class="card-demo">
-      <husky-vue-card cardTheme="green" :titleShow="false" :titleDecoration="false" title="dajiahao">
+      <husky-vue-card cardTheme="green"  :titleDecoration="false" title="dajiahao">
         <template v-slot:body>
            <div class="test">
             <span>content</span>

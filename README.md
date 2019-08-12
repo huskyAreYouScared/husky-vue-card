@@ -53,5 +53,5 @@ Vue.use(huskyVueCard)
 ### slot
 | slot name(插槽名称) | description（说明） |
 | :- | :- |
-| iconTitle（图片标题） |  add icon title（添加图片标题） |
+| iconTitle（图片标题） |  add icon title（添加图片标题,可以同时和文字标题一同出现） |
 | body（卡片主体） | add card body content（添加卡片主题内容） |
