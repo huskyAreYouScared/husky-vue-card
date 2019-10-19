@@ -114,7 +114,7 @@ export default {
     display: inline-block;
   }
   .card-title-img img{
-    width: 10%;
+    height: 100%;
     vertical-align: middle;
     display: inline-block;
   }

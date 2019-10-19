@@ -53,5 +53,28 @@ Vue.use(huskyVueCard)
 ### slot
 | slot name(插槽名称) | description（说明） |
 | :- | :- |
-| iconTitle（图片标题） |  add icon title（添加图片标题,可以同时和文字标题一同出现） |
+| iconTitle（图片标题） |  add icon title（添加图片标题） |
 | body（卡片主体） | add card body content（添加卡片主题内容） |
+
+### FAQ
+
+```
+  1. 原因：CSS2.1的盒模型中规定
+  所有毗邻的两个或更多盒元素的margin将会合并为一个margin共享
+  (In this specification, the expression collapsing margins means that adjoining margins (no non-empty content, padding or border areas or clearance separate them) of two or more boxes (which may be next to one another or nested) combine to form a single margin. )
+  解决办法：在body solt的父容器上加入v-overflowHidden
+
+  eg:
+  <husky-vue-card cardTheme="green"  :titleDecoration="false" title="欢迎使用">
+    <template v-slot:body>
+        <div class="test" v-overflowHidden>
+          <div style="margin-top:50px" >使用v-overflowHidden指令
+            来避免所有毗邻的两个或更多盒元素的margin将会合并为一个margin共享
+          </div>
+      </div>
+    </template>
+    <template v-slot:iconTitle>
+        <img src="../assets/fund-fill.svg" alt="">
+    </template>
+  </husky-vue-card>
+```

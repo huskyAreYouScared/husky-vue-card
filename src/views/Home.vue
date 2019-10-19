@@ -76,11 +76,12 @@
       </husky-vue-card>
     </div>
     <div class="card-demo">
-      <husky-vue-card cardTheme="green"  :titleDecoration="false" title="dajiahao">
+      <husky-vue-card cardTheme="green"  :titleDecoration="false" title="欢迎使用">
         <template v-slot:body>
-           <div class="test">
-            <span>content</span>
-            <p>test</p>
+           <div class="test" v-overflowHidden>
+             <div style="margin-top:50px" >使用v-overflowHidden指令
+               来避免所有毗邻的两个或更多盒元素的margin将会合并为一个margin共享
+             </div>
           </div>
         </template>
         <template v-slot:iconTitle>
