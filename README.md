@@ -56,6 +56,12 @@ Vue.use(huskyVueCard)
 | iconTitle（图片标题） |  add icon title（添加图片标题） |
 | body（卡片主体） | add card body content（添加卡片主题内容） |
 
+### 指令（directive）
+| directive name(指令名称) | description（说明） |
+| :- | :- |
+| v-overflowHidden |  [to FAQ no:1](#FAQ) |
+
+
 ### FAQ
 
 ```

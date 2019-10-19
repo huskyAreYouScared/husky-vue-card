@@ -1,6 +1,6 @@
 {
   "name": "husky-vue-card",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "vue component plugin,beautiful theme,easy use",
   "main": "index.js",
   "directories": {
